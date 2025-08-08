@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ATS = ({ score, suggestions }: { score: string, suggestions: string}) => {
+const ATS = ({ score, suggestions }: { score: number, suggestions: string}) => {
   return (
     <div>
       
