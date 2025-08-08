@@ -57,7 +57,7 @@ const CategoryHeader = ({
 const CategoryContent = ({
   tips,
 }: {
-  tips: { type: "good" | "improve"; tip: string; explanation: string }[];
+  tips: { type: "good" | "improve"; tip: string; }[];
 }) => {
   return (
     <div className="flex flex-col gap-4 items-center w-full">
@@ -98,14 +98,12 @@ const CategoryContent = ({
               />
               <p className="text-xl font-semibold">{tip.tip}</p>
             </div>
-            <p>{tip.explanation}</p>
           </div>
         ))}
       </div>
     </div>
   );
 };
-
 const Details = ({ feedback }: { feedback: Feedback }) => {
   return (
     <div className="flex flex-col gap-4 w-full">
